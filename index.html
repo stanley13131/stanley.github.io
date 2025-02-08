@@ -8,24 +8,36 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a href="https://discord.gg/PtjRaUYYGF" target="_blank">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Discord_logo_2023.svg" alt="Discord" class="discord-icon">
-    </a>
-  </header>
+  <div class="wrapper">
+    <!-- Header with Discord link -->
+    <header class="header">
+      <a href="https://discord.gg/PtjRaUYYGF" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Discord_logo_2023.svg" alt="Discord" class="discord-icon">
+      </a>
+    </header>
 
-  <main>
-    <section class="out-of-rooms">
-      <h1>OUT OF ROOMS</h1>
-      <p class="subtitle">A fan-made game about what Rooms should have been.</p>
-    </section>
+    <!-- Full screen video background -->
+    <div class="video-background">
+      <video autoplay muted loop playsinline class="video">
+        <source src="background-video.mp4" type="video/mp4">
+      </video>
+      <div class="overlay"></div>
+    </div>
 
-    <section class="about-us">
-      <h2>ABOUT US</h2>
-      <p class="about-description">
-        We are a development team making fun high quality games on Roblox.
-      </p>
-    </section>
-  </main>
+    <!-- Main content area -->
+    <main class="content">
+      <section class="out-of-rooms">
+        <h1>OUT OF ROOMS</h1>
+        <p class="subtitle">A fan-made game about what Rooms should have been.</p>
+      </section>
+
+      <section class="about-us">
+        <p class="about-title">ABOUT US</p>
+        <p class="about-description">
+          We are a development team making fun high-quality games on Roblox.
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
