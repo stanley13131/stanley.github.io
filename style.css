@@ -17,29 +17,30 @@ body, html {
 /* Header Styles */
 .header {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: flex-end;
-  padding: 1rem;
-  z-index: 50;
+  top: 10px;
+  right: 20px;
+  z-index: 50; /* Ensures it's above everything */
 }
 
 .discord-icon {
   width: 40px;
   height: auto;
   cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.discord-icon:hover {
+  transform: scale(1.1);
 }
 
 /* Video Background */
 .video-background {
-  position: absolute;
+  position: fixed; /* Keeps the video covering the entire page */
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Moves it behind all content */
   overflow: hidden;
 }
 
@@ -56,7 +57,7 @@ body, html {
   right: 0;
   bottom: 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
-  z-index: 20;
+  z-index: 0;
 }
 
 /* Main Content Styles */
@@ -67,7 +68,7 @@ body, html {
   justify-content: center;
   align-items: center;
   height: 100%;
-  z-index: 30;
+  z-index: 10;
   padding: 0 2rem;
   text-align: center;
 }
@@ -75,15 +76,16 @@ body, html {
 /* OUT OF ROOMS Section */
 .out-of-rooms {
   margin-top: 30vh; /* Adjusted vertical spacing */
-  z-index: 100;
+  z-index: 20; /* Ensures it's above the video */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .out-of-rooms img {
-  max-width: 80%; /* Ensures it scales properly */
+  max-width: 80%; /* Ensures proper scaling */
   height: auto;
   display: block;
 }
@@ -93,7 +95,6 @@ body, html {
   color: #ccc;
   margin-top: 10px;
 }
-
 
 /* ABOUT US Section */
 .about-us {
@@ -126,8 +127,8 @@ body, html {
     width: 30px;
   }
 
-  .out-of-rooms h1 {
-    font-size: 2.5rem;
+  .out-of-rooms img {
+    max-width: 90%; /* Adjust for smaller screens */
   }
 
   .about-us {
@@ -136,8 +137,8 @@ body, html {
 }
 
 @media (max-width: 480px) {
-  .out-of-rooms h1 {
-    font-size: 2rem;
+  .out-of-rooms img {
+    max-width: 95%;
   }
 
   .about-title {
