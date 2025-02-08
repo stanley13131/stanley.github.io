@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -8,23 +9,20 @@ body, html {
   font-family: Arial, sans-serif;
   height: 100%;
   width: 100%;
-  background: linear-gradient(to bottom, black, #333); /* Gradient background from black */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  background-color: #0d0b02; /* Dark background color */
   color: white;
 }
 
-header {
+/* Header Styles */
+.header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 50;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 1rem;
+  z-index: 50;
 }
 
 .discord-icon {
@@ -33,53 +31,83 @@ header {
   cursor: pointer;
 }
 
+/* Video Background */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+  z-index: 20;
+}
+
+/* Main Content Styles */
 .content {
+  position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 3rem;
-  height: 100%;
-  width: 100%;
-  position: relative;
+  height: 100vh;
+  z-index: 30;
+  text-align: center;
 }
 
 .out-of-rooms {
-  text-align: center;
+  z-index: 30;
   margin-top: 20%;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .out-of-rooms h1 {
   font-size: 3rem;
-  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .subtitle {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
+/* About Us Section */
 .about-us {
   position: absolute;
-  left: 5%; /* Slightly offset from the left */
-  top: 80%; /* Adjust the position lower for scrolling */
+  left: 5%;
+  top: 80%; /* Lower it for scrolling */
+  width: 100%;
   text-align: left;
+  z-index: 30;
 }
 
-.about-us h2 {
-  font-size: 2rem;
-  color: white;
+.about-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-color: #f59e42;
+  padding: 0.5rem;
+  margin-bottom: 10px;
 }
 
 .about-description {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
   color: #bbb;
-  margin-left: 20px;
-  margin-top: 10px;
 }
 
 /* Responsiveness */
@@ -93,8 +121,8 @@ header {
   }
 
   .about-us {
-    top: 100%; /* Ensure about-us is placed further down */
     left: 5%;
+    top: 90%; /* Further adjustment on mobile */
   }
 }
 
@@ -103,11 +131,11 @@ header {
     font-size: 2rem;
   }
 
-  .about-us h2 {
-    font-size: 1.8rem;
+  .about-title {
+    font-size: 1.2rem;
   }
 
   .about-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
