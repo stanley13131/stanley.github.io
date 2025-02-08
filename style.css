@@ -1,3 +1,6 @@
+/* Import Oswald font */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 /* Global Styles */
 * {
   margin: 0;
@@ -6,10 +9,11 @@
 }
 
 body, html {
-  font-family: Arial, sans-serif;
+  font-family: 'Oswald', sans-serif; /* Apply Oswald font globally */
+  font-weight: 400;
   height: 100%;
   width: 100%;
-  background-color: #0d0b02; /* Dark background color */
+  background-color: #0d0b02;
   color: white;
   overflow-x: hidden;
 }
@@ -19,7 +23,7 @@ body, html {
   position: fixed;
   top: 10px;
   right: 20px;
-  z-index: 50; /* Ensures it's above everything */
+  z-index: 50;
 }
 
 .discord-icon {
@@ -35,12 +39,12 @@ body, html {
 
 /* Video Background */
 .video-background {
-  position: fixed; /* Keeps the video covering the entire page */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Moves it behind all content */
+  z-index: -1;
   overflow: hidden;
 }
 
@@ -75,8 +79,8 @@ body, html {
 
 /* OUT OF ROOMS Section */
 .out-of-rooms {
-  margin-top: 30vh; /* Adjusted vertical spacing */
-  z-index: 20; /* Ensures it's above the video */
+  margin-top: 30vh;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,7 +89,7 @@ body, html {
 }
 
 .out-of-rooms img {
-  max-width: 80%; /* Ensures proper scaling */
+  max-width: 80%;
   height: auto;
   display: block;
 }
@@ -94,11 +98,12 @@ body, html {
   font-size: 1.5rem;
   color: #ccc;
   margin-top: 10px;
+  font-weight: 700; /* Make text bold */
 }
 
 /* ABOUT US Section */
 .about-us {
-  margin-top: 40vh; /* Adjusted vertical spacing */
+  margin-top: 40vh;
   position: relative;
   z-index: 30;
   width: 100%;
@@ -112,6 +117,7 @@ body, html {
   background-color: #f59e42;
   padding: 0.5rem;
   margin-bottom: 15px;
+  font-weight: 700; /* Make text bold */
 }
 
 .about-description {
@@ -119,6 +125,7 @@ body, html {
   line-height: 1.6;
   color: #bbb;
   margin-left: 10px;
+  font-weight: 700; /* Make text bold */
 }
 
 /* Responsiveness */
@@ -128,7 +135,7 @@ body, html {
   }
 
   .out-of-rooms img {
-    max-width: 90%; /* Adjust for smaller screens */
+    max-width: 90%;
   }
 
   .about-us {
