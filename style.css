@@ -59,7 +59,7 @@ main {
 
 .about-us {
   position: relative;
-  top: 70%;
+  top: 150%; /* Pushed down further so it requires scrolling */
   left: 20px;
   text-align: left;
 }
@@ -86,7 +86,7 @@ main {
 
   .about-us {
     position: relative;
-    top: 90%;
+    top: 200%; /* Pushed further for smaller screens */
     left: 10px;
   }
 
