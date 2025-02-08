@@ -1,8 +1,13 @@
-/* Basic styling for body */
-body {
-    font-family: Arial, sans-serif;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the body to use the full viewport height */
+body {
+    font-family: Arial, sans-serif;
     height: 100vh;
     display: flex;
     justify-content: flex-end;
@@ -10,7 +15,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/* Center the text on the right side */
+/* Center the text box on the right side */
 .container {
     display: flex;
     justify-content: flex-end;
