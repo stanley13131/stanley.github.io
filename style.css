@@ -76,18 +76,24 @@ body, html {
 .out-of-rooms {
   margin-top: 30vh; /* Adjusted vertical spacing */
   z-index: 30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.out-of-rooms h1 {
-  font-size: 3.5rem;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+.out-of-rooms img {
+  max-width: 80%; /* Ensures it scales properly */
+  height: auto;
+  display: block;
 }
 
 .subtitle {
   font-size: 1.5rem;
   color: #ccc;
+  margin-top: 10px;
 }
+
 
 /* ABOUT US Section */
 .about-us {
