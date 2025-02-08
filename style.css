@@ -14,6 +14,15 @@ body, html {
   overflow-x: hidden;
 }
 
+.engaging {
+  font-weight: bold; /* Or any style you want */
+}
+
+.svelte-kfi2gm {
+  font-style: italic; /* If you want to apply additional custom styles */
+}
+
+
 /* Header Styles */
 .header {
   position: fixed;
