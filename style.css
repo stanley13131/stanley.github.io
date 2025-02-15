@@ -22,15 +22,6 @@ body, html {
   font-style: italic; /* If you want to apply additional custom styles */
 }
 
-
-/* Add this CSS to style the YouTube icon */
-.youtube-icon {
-  width: 40px;
-  height: auto;
-  cursor: pointer;
-  margin-left: 20px; /* Add some space between the icons */
-}
-
 /* Header Styles */
 .header {
   position: fixed;
