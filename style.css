@@ -9,38 +9,19 @@ body, html {
   font-family: 'Oswald', sans-serif;
   height: 100%;
   width: 100%;
-  background-color: #0d0b02; /* Dark background color */
+  background-color: #0d0b02;
   color: white;
-  overflow-x: hidden;
-}
-
-.engaging {
-  font-weight: bold; /* Or any style you want */
-}
-
-.svelte-kfi2gm {
-  font-style: italic; /* If you want to apply additional custom styles */
+  overflow: hidden;
 }
 
 /* Header Styles */
 .header {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  display: flex;
-  justify-content: flex-end;
   padding: 1rem;
   z-index: 50;
 }
-
-.discord-icon {
-  width: 40px;
-  height: auto;
-  cursor: pointer;
-  margin-right: 20px; /* Space between icons */
-}
-
 
 .discord-icon {
   width: 40px;
@@ -50,22 +31,18 @@ body, html {
 
 /* Video Background */
 .video-background {
-  position: absolute; /* Changed to absolute to not interfere with content */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Send video behind the content */
-  overflow: hidden;
+  z-index: -1;
 }
 
 .video {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  position: absolute; /* Ensure the video stays within the background */
-  top: 0;
-  left: 0;
 }
 
 .overlay {
@@ -74,83 +51,64 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
-  z-index: 20;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-
-/* Main Content Styles */
+/* Main Content */
 .content {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  z-index: 10; /* Keep content above video */
-  padding: 0 2rem;
+  height: 100vh;
   text-align: center;
-}
-
-/* OUT OF ROOMS Section */
-.out-of-rooms {
-  margin-top: 30vh; /* Adjusted vertical spacing */
-  z-index: 20; /* Ensure text stays visible */
+  z-index: 10;
 }
 
 .out-of-rooms img {
-  width: 80%;
   max-width: 600px;
+  width: 80%;
+  margin-bottom: 1rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color:  #FFFFFF;
 }
 
-/* ABOUT US Section */
 .about-us {
-  margin-top: 40vh; /* Adjusted vertical spacing */
-  position: relative;
-  z-index: 30;
-  width: 100%;
-  text-align: left;
+  margin-top: 4rem;
 }
 
 .about-title {
-  font-size: 1.5rem;
-  text-transform: uppercase;
+  font-size: 2rem;
   letter-spacing: 2px;
-  background-color: #f59e42;
-  padding: 0.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
 }
 
 .about-description {
   font-size: 1.2rem;
   line-height: 1.6;
-  color:  #FFFFFF;
-  margin-left: 10px;
 }
 
-/* Responsiveness */
+/* Responsive Design */
 @media (max-width: 768px) {
   .discord-icon {
     width: 30px;
   }
 
-  .out-of-rooms img {
-    width: 90%;
+  .about-title {
+    font-size: 1.5rem;
   }
 
-  .about-us {
-    margin-top: 50vh;
+  .about-description {
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  .out-of-rooms img {
-    width: 100%;
+  .subtitle {
+    font-size: 1.2rem;
   }
 
   .about-title {
@@ -158,6 +116,6 @@ body, html {
   }
 
   .about-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
