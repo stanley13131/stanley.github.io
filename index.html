@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stanley — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="dark">
+  <button id="theme-toggle" class="theme-icon-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme">
+    <svg id="theme-icon" viewBox="0 0 24 24" width="44" height="44" aria-hidden>
+      <defs>
+        <mask id="moonMask">
+          <rect x="0" y="0" width="24" height="24" fill="white"></rect>
+          <circle id="mask-circle" cx="12" cy="12" r="6" fill="black"></circle>
+        </mask>
+      </defs>
+
+      <!-- Sun rays (group toggled visible on light theme) -->
+<g id="rays" transform-origin="12px 12px" style="opacity:0">
+  <g id="rays-group" transform="translate(12,12)">
+    <!-- 8 rays as straight lines -->
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(45)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(90)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(135)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(180)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(225)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(270)"></line>
+    <line x1="0" y1="-8" x2="0" y2="-12" stroke="currentColor" stroke-width="1.5" transform="rotate(315)"></line>
+  </g>
+</g>
+
+<circle id="sun-core" cx="12" cy="12" r="6" fill="currentColor" style="opacity:0"></circle>
+
+      <g id="moon-group" mask="url(#moonMask)">
+        <circle id="moon-core" cx="12" cy="12" r="6" fill="currentColor"></circle>
+      </g>
+    </svg>
+  </button>
+
+  <div class="container">
+    <p class="greeting reveal">Welcome!</p>
+
+    <header class="reveal">
+      <h1 class="name">
+        <span id="name-main">Stanley</span>
+        <span id="name-rotator" class="rotator" aria-live="polite" aria-atomic="true"></span>
+      </h1>
+      <p class="subtitle">Full-stack Developer — Lua — Roblox scripter</p>
+    </header>
+
+    <main>
+      <section class="about reveal">
+        <h2>About</h2>
+        <p>Hey! I'm Stanley, I build systems and gameplay for games.
+If you'd like to work together, you can reach out to me on X or Discord anytime.</p>
+      </section>
+
+  <section class="skills-block reveal">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">Lua</div>
+      <div class="skill">Back-end development</div>
+      <div class="skill">Front-end development</div>
+      <div class="skill">Roblox Studio</div>
+    </div>
+  </section>
+
+        <h2 class="learning-title">Learning</h2>
+<div class="skills learning">
+  <div class="skill">Python</div>
+  <div class="skill">Java</div>
+  <div class="skill">JavaScript</div>
+</div>
+      </section>
+
+      <section class="projects-section reveal">
+        <h2>Projects</h2>
+        <div class="projects">
+          <div class="project" data-key="doomed" role="button" tabindex="0" aria-pressed="false">
+            <div class="banner-wrap" aria-hidden="true"></div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <h3>DOOMED 2 DIE</h3>
+                <span class="badge status-important">BEING REWRITTEN — RELEASING THIS SUMMER</span>
+              </div>
+              <p class="role">Scripter — <span class="team">Stud Systems</span></p>
+            </div>
+          </div>
+
+          <div class="project" data-key="hotel" role="button" tabindex="0" aria-pressed="false">
+            <div class="banner-wrap" aria-hidden="true"></div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <h3>Hotel Rebuilt</h3>
+                <span class="badge in-progress">IN PROGRESS</span>
+              </div>
+              <p class="role">Scripter — <span class="team">Halo Devs</span></p>
+            </div>
+          </div>
+
+          <div class="project" data-key="rooms" role="button" tabindex="0" aria-pressed="false">
+            <div class="banner-wrap" aria-hidden="true"></div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <h3>Rooms Reimagined</h3>
+                <span class="badge in-progress">IN PROGRESS</span>
+              </div>
+              <p class="role">Scripter — <span class="team">Shopkeepers</span></p>
+            </div>
+          </div>
+
+          <div class="project" data-key="protocol" role="button" tabindex="0" aria-pressed="false">
+            <div class="banner-wrap" aria-hidden="true"></div>
+            <div class="project-meta">
+              <div class="meta-top">
+                <h3>PROTOCOL \\ SEE NO EVIL</h3>
+                <span class="badge in-progress">IN PROGRESS</span>
+              </div>
+              <p class="role">Scripter — <span class="team">Stud Systems</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    
+    <div id="project-modal" class="modal" aria-hidden="true">
+      <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close">&times;</button>
+        <div class="modal-header">
+          <img id="modal-logo" class="modal-logo" alt="Project logo" />
+          <div>
+            <h3 id="modal-title"></h3>
+            <p id="modal-role" class="role"></p>
+            <p id="modal-team" class="team muted"></p>
+          </div>
+        </div>
+
+        <div class="banner-wrap modal-banner-wrap" aria-hidden="true"></div>
+        <div class="modal-body">
+          <p id="modal-description"></p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="reveal">
+      <div class="socials">
+        <a href="https://github.com/stanley13131" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden><path fill="currentColor" d="M12 .5C5.58.5.5 5.58.5 12a11.5 11.5 0 0 0 7.84 10.95c.57.1.78-.25.78-.55v-2.02c-3.19.69-3.86-1.4-3.86-1.4-.52-1.34-1.27-1.7-1.27-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.53-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.29 1.18-3.1-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.07 11.07 0 0 1 2.9-.39c.98 0 1.98.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.62 1.59.23 2.77.11 3.06.74.81 1.18 1.84 1.18 3.1 0 4.42-2.7 5.39-5.28 5.67.41.36.78 1.08.78 2.18v3.23c0 .31.2.66.79.55A11.5 11.5 0 0 0 23.5 12C23.5 5.58 18.42.5 12 .5z"/></svg>
+        </a>
+
+        <a href="https://www.youtube.com/@StanleysParable" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden><path fill="currentColor" d="M23.498 6.186a2.962 2.962 0 0 0-2.087-2.093C19.68 3.5 12 3.5 12 3.5s-7.68 0-9.412.593A2.962 2.962 0 0 0 .5 6.186 30.327 30.327 0 0 0 0 11.999a30.327 30.327 0 0 0 .5 5.814 2.962 2.962 0 0 0 2.088 2.094c1.732.593 9.412.593 9.412.593s7.68 0 9.412-.593a2.962 2.962 0 0 0 2.088-2.094A30.327 30.327 0 0 0 24 11.999a30.327 30.327 0 0 0-.502-5.813zM9.545 16.568V7.429l7.273 4.57-7.273 4.57z"/></svg>
+        </a>
+
+        <a href="https://www.roblox.com/users/1498995659/profile" target="_blank" rel="noopener" aria-label="Roblox">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" fill="currentColor">
+            <path d="M 12.125 1.9980469 A 1.0001 1.0001 0 0 0 11.199219 2.7441406 L 2.0332031 37.576172 A 1.0001 1.0001 0 0 0 2.7460938 38.798828 L 37.580078 47.966797 A 1.0001 1.0001 0 0 0 38.802734 47.253906 L 47.96875 12.419922 A 1.0001 1.0001 0 0 0 47.255859 11.197266 L 12.421875 2.03125 A 1.0001 1.0001 0 0 0 12.125 1.9980469 z M 21.5 19 L 31 21.5 L 28.5 31 L 19 28.5 L 21.5 19 z"/>
+          </svg>
+        </a>
+
+        <a href="https://x.com/Stanley2073709" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden><path fill="currentColor" d="M18.3 5.7L12 12l6.3 6.3-1.4 1.4L10.6 13.4 4.3 19.7 2.9 18.3 9.2 12 2.9 5.7 4.3 4.3 10.6 10.6 16.9 4.3z"/></svg>
+        </a>
+      </div>
+
+      <div class="contact">
+        <div class="discord">Discord: <strong>themanthemyth13</strong></div>
+      </div>
+
+      <p class="copyright">&copy; 2026 Stanley</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
