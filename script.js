@@ -4,7 +4,7 @@ const projects = {
     title: "DOOMED 2 DIE",
     role: "Scripter",
     team: "Stud Systems",
-    description: "You, and a team of up to 8, against millions of zombies. Good luck. Built scalable wave-based zombie spawning with server-side validation and optimized remote events.",
+    description: "You, and a team of up to 8, against millions of zombies. Good luck.",
     banners: [
       "https://tr.rbxcdn.com/180DAY-b8ec704e7a812da919cf9f1f6f1407f9/768/432/Image/Webp/noFilter",
       "https://tr.rbxcdn.com/180DAY-6faf6b5bd5061e0f1a5cf08d09197d6f/768/432/Image/Webp/noFilter",
@@ -20,7 +20,7 @@ const projects = {
     title: "Hotel Rebuilt",
     role: "Scripter",
     team: "Halo Devs",
-    description: "Recreated the iconic hotel environment with improved interactive scripting, event systems, and refined environmental logic to match player expectations.",
+    description: "Recreated the hotel from DOORS.",
     banners: [
       "https://tr.rbxcdn.com/180DAY-531a9d8e235bc78c95f558887eb72372/768/432/Image/Webp/noFilter",
       "https://tr.rbxcdn.com/180DAY-de531fc6fb69c238615a9fafeb4b26ad/768/432/Image/Webp/noFilter"
@@ -33,7 +33,7 @@ const projects = {
     title: "Rooms Reimagined",
     role: "Scripter",
     team: "Shopkeepers",
-    description: "Reworked and expanded the classic rooms for better navigation, optimized scripting, and subtle visual improvements to deepen immersion and reduce bugs.",
+    description: "Completely reimaginated ROOMS from DOORS.",
     banners: [
       "https://tr.rbxcdn.com/180DAY-8fcb0fadf47801f3c3458a73f753cf85/768/432/Image/Webp/noFilter",
       "https://tr.rbxcdn.com/180DAY-d8d21a6d63135a5de2c419ea3b7eaf6b/768/432/Image/Webp/noFilter"
@@ -46,7 +46,7 @@ const projects = {
     title: "PROTOCOL \\ SEE NO EVIL",
     role: "Scripter",
     team: "Stud Systems",
-    description: "Protocol is a work-in-progress systems-heavy title focused on stealth mechanics and server-authoritative interactions.",
+    description: "Protocol is a SCP-inspired gmae",
     banners: [
       "https://t2.rbxcdn.com/180DAY-67b2be37ae31be00ab1319901b9d8347"
     ],
