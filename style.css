@@ -64,7 +64,16 @@ body::before{
 }
 @keyframes bgMove{ 0%{ transform: translateY(0) rotate(0deg) } 50%{ transform: translateY(-6%) rotate(3deg) } 100%{ transform: translateY(0) rotate(0deg) } }
 
-.container{max-width:980px;margin:0 auto;padding:28px; position:relative; z-index:1}
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 28px;
+  position: relative;
+  z-index: 1;
+  
+  transform: scale(1.1)
+  transform-origin: top center;
+}
 
 .greeting{ text-align:center; margin:8px 0 12px; color:var(--accent); font-weight:700 }
 
